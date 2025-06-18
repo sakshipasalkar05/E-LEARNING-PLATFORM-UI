@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Learning Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <h2 class="logo">EduPro</h2>
+      <nav>
+        <ul>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#progress">Progress</a></li>
+          <li><a href="#video">Lecture</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="main-header">
+        <button id="toggleBtn">&#9776;</button>
+        <h1>E-Learning Platform</h1>
+      </header>
+
+      <section id="dashboard">
+        <h2>Welcome to EduPro</h2>
+        <p>Track your learning journey and explore available courses.</p>
+      </section>
+
+      <section id="courses">
+        <h2>Available Courses</h2>
+        <div class="course-list">
+          <div class="course">
+            <h3>Web Development Bootcamp</h3>
+            <p>Learn HTML, CSS, JS, and React.</p>
+          </div>
+          <div class="course">
+            <h3>DSA Essentials</h3>
+            <p>Understand sorting, searching, and problem-solving techniques.</p>
+          </div>
+          <div class="course">
+            <h3>Python for Beginners</h3>
+            <p>Build a strong foundation in Python programming.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="progress">
+        <h2>Your Progress</h2>
+        <div class="progress-item">
+          <p>Web Development Bootcamp</p>
+          <progress value="70" max="100"></progress>
+        </div>
+        <div class="progress-item">
+          <p>DSA Essentials</p>
+          <progress value="45" max="100"></progress>
+        </div>
+      </section>
+
+      <section id="video">
+        <h2>Current Lecture</h2>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ZxKM3DCV2kE" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <footer>
+        <p>&copy; 2025 EduPro. All rights reserved.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
